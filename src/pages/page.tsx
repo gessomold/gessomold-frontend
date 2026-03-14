@@ -1,5 +1,6 @@
 import { ChevronRight, Dot } from "lucide-react";
 import Banner from "../ components/Banner";
+import Footer from "../ components/Footer";
 
 export function Page() {
   return (
@@ -34,6 +35,8 @@ export function Page() {
       </section>
 
       <Banner />
+
+      <Footer />
     </>
   );
 }
