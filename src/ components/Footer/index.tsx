@@ -1,5 +1,6 @@
 import { BadgeCheck, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import logoWhatsapp from "../../assets/images/whatsapp.svg";
+import { motion } from "motion/react";
 
 export default function Footer() {
   return (
@@ -12,9 +13,21 @@ export default function Footer() {
             A referência em gesso e drywall em Coxim e região. Comprometimento,
             qualidade e pontualidade em cada projeto.
           </p>
-          <div className="flex gap-2 max-w-82 rounded-3xl p-2 bg-secondary border border-[#353535] items-center text-sm">
+          <div className="relative overflow-hidden flex gap-1 max-w-81 rounded-3xl p-2 bg-secondary border border-[#353535] items-center text-sm">
+            <motion.div
+              className="absolute top-0 h-full w-12 bg-linear-to-r from-transparent via-white/30 to-transparent -skew-x-12"
+              initial={{ left: "-100%" }}
+              animate={{ left: "200%" }}
+              transition={{
+                repeat: Infinity,
+                duration: 1.5,
+                ease: "linear",
+                repeatDelay: 1,
+              }}
+            />
+
             <BadgeCheck className="text-primary" />
-            <p className="text-white text-sm font-semibold">
+            <p className="text-white text-sm font-semibold relative z-10">
               Garantia de 5 anos em todos os serviços
             </p>
           </div>
@@ -26,7 +39,7 @@ export default function Footer() {
               <a
                 href="https://maps.app.goo.gl/6LTtvV4tpPfZ5vvU9"
                 target="_blank"
-                className="flex gap-2"
+                className="flex gap-2 hover:text-primary"
               >
                 <MapPin className="text-primary" />
                 R. Gen. Mendes de Morais, 1995 - Sr. Divino, Coxim - MS
@@ -36,7 +49,7 @@ export default function Footer() {
               <a
                 href="https://api.whatsapp.com/send?phone=5567998336427"
                 target="_blank"
-                className="flex gap-2"
+                className="flex gap-2 hover:text-primary"
               >
                 <img className="w-6" src={logoWhatsapp} alt="Whatsapp" />
                 (67) 99833-6427
@@ -46,14 +59,14 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/moldgesso_decoracoes"
                 target="_blank"
-                className="flex gap-2"
+                className="flex gap-2 hover:text-primary"
               >
                 <Instagram className="text-primary" />
                 moldgesso_decoracoes
               </a>
             </li>
             <li>
-              <a className="flex gap-2">
+              <a className="flex gap-2 hover:text-primary">
                 <Phone className="text-primary" />
                 3291-5872
               </a>
@@ -62,7 +75,7 @@ export default function Footer() {
               <a
                 href="mailto:contato@moldgesso.com.br"
                 target="_blank"
-                className="flex gap-2"
+                className="flex gap-2 hover:text-primary"
               >
                 <Mail className="text-primary" />
                 contato@moldgesso.com.br
