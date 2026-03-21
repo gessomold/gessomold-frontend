@@ -1,6 +1,8 @@
 import { ChevronRight, Dot } from "lucide-react";
 import Banner from "../ components/Banner";
 import Footer from "../ components/Footer";
+import { Header } from "../ components/Header";
+import CardServico from "../ components/Card-Servico";
 import { animate, motion, useMotionValue, useTransform } from "motion/react";
 import { useEffect } from "react";
 
@@ -17,6 +19,7 @@ export function Page() {
 
   return (
     <>
+      <Header />
       <section className="w-full h-75 bg-secondary text-white">
         <div className=" w-118 h-49 grid gap-2 grid-cols-1 ml-4 absolute top-20 ">
           <div className="relative overflow-hidden flex gap-1 max-w-58 rounded-3xl px-2 py-1 bg-secondary border border-[#353535] items-center text-sm">
@@ -65,15 +68,16 @@ export function Page() {
           </a>
         </div>
       </section>
-
-      <section>
-        <h2 className="flex justify-center font-semibold text-xl">
+      <section className="p-4 ">
+        <h2 className="flex pb-3 justify-center font-semibold text-xl">
           Nossos Serviços
         </h2>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 justify-items-center">
+          <CardServico imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQWcvhEDTwE3C0n5sMnkG2qdeogKwiDi4Vw&s" titulo="Forro Draywall" descricao="Acabamento liso, moderno e com excelente isolamento acústico e térmico para residências e comércios" />
+        </div>
       </section>
-
       <Banner />
-
+      
       <Footer />
     </>
   );
