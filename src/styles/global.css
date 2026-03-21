@@ -4,3 +4,7 @@
   --color-primary: #ad0023;
   --color-secondary: #141414;
 }
+
+* {
+  font-family: "Inter", sans-serif;
+}
