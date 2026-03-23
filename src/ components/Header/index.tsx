@@ -1,7 +1,7 @@
 export function Header() {
   return (
     <>
-      <header className="flex w-full h-15 items-center justify-between bg-white sticky top-0 z-1">
+      <header className="flex w-full p-4 items-center justify-between bg-white sticky top-0 z-1">
         <div className="ml-4 rounded-xl border w-12 h-12">
           <img src="" alt="Logo" />
         </div>
