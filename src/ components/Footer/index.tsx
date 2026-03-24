@@ -32,7 +32,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 sm:justify-self-end">
           <h2 className="text-xl font-semibold text-white">Contato</h2>
           <ul className="text-white flex flex-col gap-4">
             <li>
