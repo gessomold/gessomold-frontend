@@ -73,7 +73,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <span className="w-155 h-0.5 bg-gray-500 my-5"></span>
+        <span className="w-full h-0.5 bg-gray-500 my-5"></span>
 
         <div className="flex flex-wrap gap-5">
           <Badge
