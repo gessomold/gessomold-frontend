@@ -1,6 +1,6 @@
 import Banner from "../ components/Banner";
 import Footer from "../ components/Footer";
-import { Header } from "../ components/Header";
+import Header from "../ components/Header";
 import CardServico from "../ components/Card-Servico";
 import Hero from "../ components/Hero";
 
@@ -12,7 +12,7 @@ export function Page() {
     
       <Hero />
 
-      <section>
+      <section id="servicos">
         <h2 className="flex justify-center font-semibold text-xl">
           Nossos Serviços
         </h2>
