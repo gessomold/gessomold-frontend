@@ -3,13 +3,12 @@ import Footer from "../ components/Footer";
 import Header from "../ components/Header";
 import CardServico from "../ components/Card-Servico";
 import Hero from "../ components/Hero";
-import { animate, motion, useMotionValue, useTransform } from "motion/react";
+import { animate, useMotionValue } from "motion/react";
 import { useEffect, useState } from "react";
 import ModalServico from "../ components/modal/ModalServico";
 
 export function Page() {
   const count = useMotionValue(0);
-  const rounded = useTransform(count, (latest) => Math.round(latest));
   const servicosData = [
     {
       id: 1,
@@ -51,15 +50,14 @@ export function Page() {
   return (
     <>
       <Header />
-    
+
       <Hero />
 
-      <section id="servicos">
-        <h2 className="flex justify-center font-semibold text-xl">
+      <section id="servicos" className="p-4">
+        <h2 className="flex justify-center font-semibold pb-4 text-xl">
           Nossos Serviços
         </h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] p-4  gap-6 justify-items-center">
-
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 justify-items-center">
           {servicosData.map((servico) => (
             <CardServico
               key={servico.id}
@@ -69,7 +67,6 @@ export function Page() {
               onClick={() => setServicoSelecionado(servico)}
             />
           ))}
-
         </div>
       </section>
       <Banner />
@@ -81,7 +78,7 @@ export function Page() {
           imagensModal={servicoSelecionado.imagens}
           descricaoModal={servicoSelecionado.descricao}
           onClose={() => setServicoSelecionado(null)}
-          />
+        />
       )}
     </>
   );
