@@ -22,10 +22,27 @@ export default function Hero() {
 
   return (
     <>
-      <section className="flex flex-col gap-y-3 w-full min-h-75 bg-secondary text-white p-4">
-        <div className="flex flex-col gap-y-1">
-          <div className="flex flex-col gap-y-1">
-            <div className="relative overflow-hidden flex gap-1 max-w-58 rounded-3xl px-2 py-1 bg-secondary border border-[#353535] items-center text-sm">
+      <section
+        className="
+    relative
+    min-h-screen
+    flex
+    items-center
+    px-6 md:px-12 lg:px-20
+    bg-[url('../assets/images/fachada.jpeg')]
+    bg-cover
+    bg-right
+    bg-no-repeat
+    overflow-hidden
+  "
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-[#06121e]/95 via-[#06121e]/80 to-transparent"></div>
+
+        <div className="absolute inset-0 bg-black/30"></div>
+
+        <div className="relative z-10 max-w-3xl flex flex-col gap-8">
+          <div className="flex flex-col gap-5">
+            <div className="relative overflow-hidden flex gap-1 max-w-fit rounded-3xl px-3 py-1 bg-secondary/70 border border-white/10 items-center text-sm backdrop-blur-sm">
               <motion.div
                 className="absolute top-0 h-full w-12 bg-linear-to-r from-transparent via-white/30 to-transparent -skew-x-12"
                 initial={{ left: "-100%" }}
@@ -37,60 +54,63 @@ export default function Hero() {
                   repeatDelay: 1,
                 }}
               />
-              <Dot className="text-primary" />
+              <Dot className="text-primary size-3" />
               <p className="text-white text-sm font-semibold">
                 LÍDER EM COXIM E REGIÃO
               </p>
             </div>
-            <h1 className="text-4xl font-bold w-85">
-              MAIS DE <motion.span>{rounded}</motion.span> ANOS DE EXCELENCIA
+
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-2xl">
+              MAIS DE{" "}
+              <motion.span className="bg-primary tabular-nums rounded-md">{rounded}</motion.span> ANOS
+              DE EXCELÊNCIA
             </h1>
-          </div>
-          <div className="text-gray-500 w-85">
-            <p>
+
+            <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
               Transformamos ambientes com precisão e elegância. Atendemos Coxim
               e região com material de primeira linha e acabamento impecável.
             </p>
           </div>
-        </div>
 
-        <div className="flex gap-2 flex-wrap items-center">
-          <a
-            href="https://api.whatsapp.com/send?phone=5567998336427"
-            target="_blank"
-            className="bg-primary hover:bg-primary/90 transition-all text-sm font-semibold rounded-lg flex gap-1 items-center text-white px-4 py-2 cursor-pointer"
-          >
-            Orçamento sem compromisso <ChevronRight />
-          </a>
-          <div className="flex gap-x-1 items-center">
-            <p className="text-sm text-gray-500">Ou ligue agora: </p>{" "}
+          <div className="flex gap-4 flex-wrap items-center">
             <a
-              href="tel:+5567998336427"
-              className="text-white cursor-pointer hover:text-primary text-sm"
+              href="https://api.whatsapp.com/send?phone=5567998336427"
+              target="_blank"
+              className="bg-primary hover:bg-primary/90 transition-all text-sm font-semibold rounded-lg flex gap-2 items-center text-white px-6 py-3 shadow-xl"
             >
-              (67) 99833-6427
+              Solicitar Visita Técnica <ChevronRight />
             </a>
+
+            <div className="flex gap-x-1 items-center">
+              <p className="text-sm text-gray-400">Ou ligue agora:</p>
+              <a
+                href="tel:+5567998336427"
+                className="text-white hover:text-primary text-sm"
+              >
+                (67) 99833-6427
+              </a>
+            </div>
           </div>
-        </div>
 
-        <span className="w-full h-0.5 bg-gray-500 my-5"></span>
+          <span className="w-full max-w-3xl h-px bg-white/10"></span>
 
-        <div className="flex flex-wrap gap-5">
-          <Badge
-            titulo="5 Anos de Garantia"
-            descricao="Segurança Total"
-            icon={<ShieldCheck />}
-          />
-          <Badge
-            titulo="Material Premium"
-            descricao="Melhores Marcas"
-            icon={<BrickWallShield />}
-          />
-          <Badge
-            titulo="Acabamento Fino"
-            descricao="Detalhe Perfeccionista"
-            icon={<PencilRuler />}
-          />
+          <div className="flex flex-wrap gap-8">
+            <Badge
+              titulo="5 Anos de Garantia"
+              descricao="Segurança Total"
+              icon={<ShieldCheck color="#FFF" />}
+            />
+            <Badge
+              titulo="Material Premium"
+              descricao="Melhores Marcas"
+              icon={<BrickWallShield color="#FFF" />}
+            />
+            <Badge
+              titulo="Acabamento Fino"
+              descricao="Detalhe Perfeccionista"
+              icon={<PencilRuler color="#FFF" />}
+            />
+          </div>
         </div>
       </section>
     </>

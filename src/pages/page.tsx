@@ -3,40 +3,101 @@ import Footer from "../ components/Footer";
 import Header from "../ components/Header";
 import CardServico from "../ components/Card-Servico";
 import Hero from "../ components/Hero";
-import { animate, motion, useMotionValue, useTransform } from "motion/react";
+import { animate, useMotionValue } from "motion/react";
 import { useEffect, useState } from "react";
 import ModalServico from "../ components/modal/ModalServico";
 
+// Decorações
+import decoracoesEmGeral0 from '../assets/images/decoracoes-em-geral0.jpeg';
+import decoracoesEmGeral1 from '../assets/images/decoracoes-em-geral1.jpeg';
+import decoracoesEmSanca0 from '../assets/images/decoracoes-em-sanca0.jpeg';
+import decoracoesIluminadas0 from '../assets/images/decoracoes-iluminadas0.jpeg';
+import decoracoes0 from '../assets/images/decoracoes0.jpeg';
+
+// Divisórias Decoradas
+import divisoriasDrywallDecoradas0 from '../assets/images/divisorias-drywall-decoradas0.jpeg';
+import divisoriasDrywallDecoradas1 from '../assets/images/divisorias-drywall-decoradas1.jpeg';
+import divisoriasDrywallDecoradas2 from '../assets/images/divisorias-drywall-decoradas2.jpeg';
+
+// Divisórias Padrão
+import divisoriasEmDrywall0 from '../assets/images/divisorias-em-drywall0.jpeg';
+import divisoriasEmDrywall1 from '../assets/images/divisorias-em-drywall1.jpeg';
+import divisoriasEmDrywall2 from '../assets/images/divisorias-em-drywall2.jpeg';
+
+// Forros
+import forroDrywallInclinado0 from '../assets/images/forro-drywall-inclinado0.jpeg';
+import forroDrywall0 from '../assets/images/forro-drywall0.jpeg';
+import forroDrywall1 from '../assets/images/forro-drywall1.jpeg';
+import forroDrywall2 from '../assets/images/forro-drywall2.jpeg';
+import forroDrywall3 from '../assets/images/forro-drywall3.jpeg';
+
 export function Page() {
   const count = useMotionValue(0);
-  const rounded = useTransform(count, (latest) => Math.round(latest));
   const servicosData = [
     {
       id: 1,
       imagens: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQWcvhEDTwE3C0n5sMnkG2qdeogKwiDi4Vw&s", // Imagem 1 (será a capa do card)
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzR-9wGf9Tqj1b4m7K0zNf-74Y1Gf_6K1Lg&s", // Imagem 2 (aparece no modal)
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzE_6L_A8p0H9P-pY6D7jD9vE7b8A8s7A6A&s"  // Imagem 3 (aparece no modal)
+        forroDrywall0, 
+        forroDrywall1, 
+        forroDrywall2, 
+        forroDrywall3
       ],
-      titulo: "Forro Drywall Padrão",
-      descricao: "Acabamento liso, moderno e com excelente isolamento acústico e térmico para residências e comércios."
+      titulo: "Forro Drywall",
+      descricao: "Acabamento liso e moderno, com excelente isolamento acústico e térmico para residências e comércios."
     },
     {
       id: 2,
       imagens: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzR-9wGf9Tqj1b4m7K0zNf-74Y1Gf_6K1Lg&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFQWcvhEDTwE3C0n5sMnkG2qdeogKwiDi4Vw&s"
+        forroDrywallInclinado0
       ],
-      titulo: "Sancas de Gesso Iluminadas",
-      descricao: "Design sofisticado com iluminação embutida em fita de LED para valorizar a sua sala de estar."
-    },
+      titulo: "Forro Drywall Inclinado",
+      descricao: "Acompanha o caimento do telhado, garantindo um visual arrojado e sensação de amplitude ao ambiente."
+    }, 
     {
       id: 3,
       imagens: [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzE_6L_A8p0H9P-pY6D7jD9vE7b8A8s7A6A&s"
+        decoracoesEmGeral0,
+        decoracoesEmGeral1,
+        decoracoes0,
       ],
-      titulo: "Divisórias Especiais",
-      descricao: "Instalação rápida e limpa de divisórias para escritórios e separação de ambientes."
+      titulo: "Decorações em Geral",
+      descricao: "Painéis, nichos e detalhes sob medida em gesso que transformam qualquer espaço com muita sofisticação."
+    },
+    {
+      id: 4,
+      imagens: [
+        decoracoesEmSanca0
+      ],
+      titulo: "Decorações em Sanca",
+      descricao: "Acabamento elegante no contorno do teto, ideal para criar luzes indiretas e valorizar a sua sala."
+    }, 
+    {
+      id: 5,
+      imagens: [
+        decoracoesIluminadas0
+      ],
+      titulo: "Decorações Iluminadas",
+      descricao: "Projetos de gesso pensados estrategicamente para embutir fitas de LED e spots, criando ambientes aconchegantes."
+    },
+    {
+      id: 6,
+      imagens: [
+        divisoriasEmDrywall0,
+        divisoriasEmDrywall1,
+        divisoriasEmDrywall2,
+      ],
+      titulo: "Divisórias Padrão",
+      descricao: "Instalação rápida e sem sujeira. A solução perfeita e econômica para criar novos cômodos e escritórios."
+    }, 
+    {
+      id: 7,
+      imagens: [
+        divisoriasDrywallDecoradas0,
+        divisoriasDrywallDecoradas1,
+        divisoriasDrywallDecoradas2,
+      ],
+      titulo: "Divisórias Decoradas",
+      descricao: "Separação de ambientes com design personalizado, unindo a funcionalidade da parede com a beleza de recortes únicos."
     },
   ];
 
@@ -51,15 +112,12 @@ export function Page() {
   return (
     <>
       <Header />
-    
       <Hero />
-
-      <section id="servicos">
-        <h2 className="flex justify-center font-semibold text-xl">
+      <section id="servicos" className="w-full py-8">
+        <h2 className="flex justify-center font-semibold pb-8 text-2xl">
           Nossos Serviços
         </h2>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] p-4  gap-6 justify-items-center">
-
+        <div className="w-full max-w-[1440px] mx-auto px-4 md:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {servicosData.map((servico) => (
             <CardServico
               key={servico.id}
@@ -69,7 +127,6 @@ export function Page() {
               onClick={() => setServicoSelecionado(servico)}
             />
           ))}
-
         </div>
       </section>
       <Banner />
@@ -81,7 +138,7 @@ export function Page() {
           imagensModal={servicoSelecionado.imagens}
           descricaoModal={servicoSelecionado.descricao}
           onClose={() => setServicoSelecionado(null)}
-          />
+        />
       )}
     </>
   );
