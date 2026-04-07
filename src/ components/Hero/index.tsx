@@ -62,7 +62,7 @@ export default function Hero() {
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-2xl">
               MAIS DE{" "}
-              <motion.span className="bg-primary tabular-nums rounded-md">{rounded}</motion.span> ANOS
+              <motion.span className="bg-primary tabular-nums rounded-md">{rounded}</motion.span> ANOS <br />
               DE EXCELÊNCIA
             </h1>
 
