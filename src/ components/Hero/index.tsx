@@ -23,18 +23,19 @@ export default function Hero() {
   return (
     <>
       <section
+        id="inicio"
         className="
-    relative
-    min-h-screen
-    flex
-    items-center
-    px-6 md:px-12 lg:px-20
-    bg-[url('../assets/images/fachada.jpeg')]
-    bg-cover
-    bg-right
-    bg-no-repeat
-    overflow-hidden
-  "
+        relative
+        min-h-screen
+        flex
+        items-center
+        px-6 md:px-12 lg:px-20
+        bg-[url('../assets/images/fachada.jpeg')]
+        bg-cover
+        bg-right
+        bg-no-repeat
+        overflow-hidden
+      "
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#06121e]/95 via-[#06121e]/80 to-transparent"></div>
 
