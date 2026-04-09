@@ -23,13 +23,20 @@ import divisoriasDrywallDecoradas2 from '../assets/images/divisorias-drywall-dec
 import divisoriasEmDrywall0 from '../assets/images/divisorias-em-drywall0.jpeg';
 import divisoriasEmDrywall1 from '../assets/images/divisorias-em-drywall1.jpeg';
 import divisoriasEmDrywall2 from '../assets/images/divisorias-em-drywall2.jpeg';
+import divisorias0 from '../assets/images/divisorias0.jpg'
+import divisorias1 from '../assets/images/divisorias1.jpg'
+import divisorias3 from '../assets/images/divisorias3.jpg'
 
 // Forros
 import forroDrywallInclinado0 from '../assets/images/forro-drywall-inclinado0.jpeg';
 import forroDrywall0 from '../assets/images/forro-drywall0.jpeg';
 import forroDrywall1 from '../assets/images/forro-drywall1.jpeg';
 import forroDrywall2 from '../assets/images/forro-drywall2.jpeg';
-import forroDrywall3 from '../assets/images/forro-drywall3.jpeg';
+import forroDrywall3 from '../assets/images/forro-drywall3.jpeg'
+
+//Molduras e placas 3D
+import moldurasplacas3D0 from '../assets/images/molduras-placas3D0.jpg'
+import moldurasplacas3D1 from '../assets/images/molduras-placas3D1.jpg'
 
 export function Page() {
   const count = useMotionValue(0);
@@ -85,6 +92,9 @@ export function Page() {
         divisoriasEmDrywall0,
         divisoriasEmDrywall1,
         divisoriasEmDrywall2,
+        divisorias0,
+        divisorias1,
+        divisorias3
       ],
       titulo: "Divisórias Padrão",
       descricao: "Instalação rápida e sem sujeira. A solução perfeita e econômica para criar novos cômodos e escritórios."
@@ -98,6 +108,14 @@ export function Page() {
       ],
       titulo: "Divisórias Decoradas",
       descricao: "Separação de ambientes com design personalizado, unindo a funcionalidade da parede com a beleza de recortes únicos."
+    }, {
+      id: 8,
+      imagens: [
+        moldurasplacas3D1,
+        moldurasplacas3D0
+      ],
+      titulo: "Molduras e Placas 3D",
+      descricao: "Acabamentos elegantes e revestimentos de parede em alto-relevo que trazem textura, movimento e muita personalidade ao seu ambiente."
     },
   ];
 
