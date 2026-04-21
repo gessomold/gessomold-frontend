@@ -5,10 +5,14 @@ import { Menu, X } from "lucide-react";
 export default function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
 
-  const scrollTo = (id: string) => {
+ const scrollTo = (id: string) => {
+  if (id === "inicio") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setMenuAberto(false);
-  };
+  }
+  setMenuAberto(false);
+};
 
   return (
     <header
