@@ -11,6 +11,12 @@ import ModalServico from "../ components/modal/ModalServico";
 import decoracoesEmGeral0 from '../assets/images/decoracoes-em-geral0.jpeg';
 import decoracoesEmGeral1 from '../assets/images/decoracoes-em-geral1.jpeg';
 import decoracoesEmSanca0 from '../assets/images/decoracoes-em-sanca0.jpeg';
+import decoracoesEmSanca1 from '../assets/images/decoracoes-em-sanca1.jpeg';
+import decoracoesEmSanca2 from '../assets/images/decoracoes-em-sanca2.jpeg';
+import decoracoesEmSanca3 from '../assets/images/decoracoes-em-sanca3.jpeg';
+import decoracoesEmSanca4 from '../assets/images/decoracoes-em-sanca4.jpeg';
+
+
 import decoracoesIluminadas0 from '../assets/images/decoracoes-iluminadas0.jpeg';
 import decoracoes0 from '../assets/images/decoracoes0.jpeg';
 
@@ -44,9 +50,9 @@ export function Page() {
     {
       id: 1,
       imagens: [
-        forroDrywall0, 
-        forroDrywall1, 
-        forroDrywall2, 
+        forroDrywall0,
+        forroDrywall1,
+        forroDrywall2,
         forroDrywall3
       ],
       titulo: "Forro Drywall",
@@ -59,7 +65,7 @@ export function Page() {
       ],
       titulo: "Forro Drywall Inclinado",
       descricao: "Acompanha o caimento do telhado, garantindo um visual arrojado e sensação de amplitude ao ambiente."
-    }, 
+    },
     {
       id: 3,
       imagens: [
@@ -73,11 +79,15 @@ export function Page() {
     {
       id: 4,
       imagens: [
-        decoracoesEmSanca0
+        decoracoesEmSanca0,
+        decoracoesEmSanca1,
+        decoracoesEmSanca2,
+        decoracoesEmSanca3,
+        decoracoesEmSanca4
       ],
       titulo: "Decorações em Sanca",
       descricao: "Acabamento elegante no contorno do teto, ideal para criar luzes indiretas e valorizar a sua sala."
-    }, 
+    },
     {
       id: 5,
       imagens: [
@@ -98,7 +108,7 @@ export function Page() {
       ],
       titulo: "Divisórias Padrão",
       descricao: "Instalação rápida e sem sujeira. A solução perfeita e econômica para criar novos cômodos e escritórios."
-    }, 
+    },
     {
       id: 7,
       imagens: [
