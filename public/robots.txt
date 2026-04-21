@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.moldgesso.com.br/sitemap.xml
