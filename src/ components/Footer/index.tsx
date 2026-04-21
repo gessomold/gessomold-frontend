@@ -1,15 +1,13 @@
 import { BadgeCheck, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import logoWhatsapp from "../../assets/images/whatsapp.svg";
 import { motion } from "motion/react";
-import Logo from "../../assets/images/logo.jpg";
 
 export default function Footer() {
   return (
     <footer className="bg-secondary" id="contato">
       <section className="grid sm:grid-cols-2 p-4 gap-4">
         <div className="max-w-120 flex flex-col gap-4">
-          <h2 className="text-xl font-semibold text-white">Empresa</h2>
-          <img src={Logo} alt="Logo" className="w-13 h-13" />
+          <h2 className="text-xl font-semibold text-white">Empresa</h2>          
           <p className="text-gray-500">
             A referência em gesso e drywall em Coxim e região. Comprometimento,
             qualidade e pontualidade em cada projeto.

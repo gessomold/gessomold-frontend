@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -16,10 +16,10 @@ export default function Header() {
 
   return (
     <header
-      className="flex w-full p-2 items-center justify-between bg-white sticky top-0 z-50 shadow-sm"
+      className="flex flex-wrap gap-y-3 w-full p-2 items-center justify-between bg-white sticky top-0 z-50 shadow-sm"
       id="inicio"
     >
-      <img className="w-16 h-16 rounded-xl" src={Logo} alt="Logo" />
+      <img className="w-30" src={Logo} alt="Logo" />
 
       <ul className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-8">
         <li>
