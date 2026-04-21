@@ -15,6 +15,9 @@ import decoracoesEmSanca1 from '../assets/images/decoracoes-em-sanca1.jpeg';
 import decoracoesEmSanca2 from '../assets/images/decoracoes-em-sanca2.jpeg';
 import decoracoesEmSanca3 from '../assets/images/decoracoes-em-sanca3.jpeg';
 import decoracoesEmSanca4 from '../assets/images/decoracoes-em-sanca4.jpeg';
+import decoracoesEmSanca5 from '../assets/images/decoracoes-em-sanca5.jpeg';
+import decoracoesEmSanca6 from '../assets/images/decoracoes-em-sanca6.jpeg';
+import decoracoesEmSanca7 from '../assets/images/decoracoes-em-sanca7.jpeg';
 
 
 import decoracoesIluminadas0 from '../assets/images/decoracoes-iluminadas0.jpeg';
@@ -83,7 +86,11 @@ export function Page() {
         decoracoesEmSanca1,
         decoracoesEmSanca2,
         decoracoesEmSanca3,
-        decoracoesEmSanca4
+        decoracoesEmSanca4,
+        decoracoesEmSanca5,
+        decoracoesEmSanca6,
+        decoracoesEmSanca7,
+        
       ],
       titulo: "Decorações em Sanca",
       descricao: "Acabamento elegante no contorno do teto, ideal para criar luzes indiretas e valorizar a sua sala."
