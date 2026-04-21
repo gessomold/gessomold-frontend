@@ -67,9 +67,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a className="flex gap-2 hover:text-primary">
+              <a
+                href="tel:+5567999182277"
+                className="flex gap-2 hover:text-primary"  >
                 <Phone className="text-primary" />
-                3291-5872
+                (67) 99918-2277
               </a>
             </li>
             <li>
