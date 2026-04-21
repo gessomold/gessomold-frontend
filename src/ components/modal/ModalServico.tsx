@@ -115,7 +115,14 @@ export default function ModalServico({
 
           <a
             href="https://api.whatsapp.com/send?phone=5567998336427"
-            className="bg-primary w-full sm:w-auto hover:bg-red-800 cursor-pointer text-white font-bold py-3 px-6 sm:px-8 rounded-full text-xs sm:text-sm uppercase tracking-wide transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary hover:bg-red-800 cursor-pointer text-white font-bold rounded-full 
+             flex items-center justify-center text-center
+             w-full sm:w-auto 
+             py-2 px-4 sm:px-6 
+             text-[10px] sm:text-xs 
+             uppercase tracking-wide transition-colors"
           >
             Solicitar Orçamento (67) 99833-6427
           </a>
