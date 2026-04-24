@@ -30,7 +30,7 @@ export default function Hero() {
         flex
         items-center
         px-6 md:px-12 lg:px-20
-        bg-[url('../assets/images/fachada.jpeg')]
+        bg-[url('../assets/images/fachada.webp')]
         bg-cover
         bg-right
         bg-no-repeat
