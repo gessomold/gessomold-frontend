@@ -8,44 +8,44 @@ import { useEffect, useState } from "react";
 import ModalServico from "../ components/modal/ModalServico";
 
 // Decorações
-import decoracoesEmGeral0 from '../assets/images/decoracoes-em-geral0.jpeg';
-import decoracoesEmGeral1 from '../assets/images/decoracoes-em-geral1.jpeg';
-import decoracoesEmSanca0 from '../assets/images/decoracoes-em-sanca0.jpeg';
-import decoracoesEmSanca1 from '../assets/images/decoracoes-em-sanca1.jpeg';
-import decoracoesEmSanca2 from '../assets/images/decoracoes-em-sanca2.jpeg';
-import decoracoesEmSanca3 from '../assets/images/decoracoes-em-sanca3.jpeg';
-import decoracoesEmSanca4 from '../assets/images/decoracoes-em-sanca4.jpeg';
-import decoracoesEmSanca5 from '../assets/images/decoracoes-em-sanca5.jpeg';
-import decoracoesEmSanca6 from '../assets/images/decoracoes-em-sanca6.jpeg';
-import decoracoesEmSanca7 from '../assets/images/decoracoes-em-sanca7.jpeg';
+import decoracoesEmGeral0 from '../assets/images/decoracoes-em-geral0.webp';
+import decoracoesEmGeral1 from '../assets/images/decoracoes-em-geral1.webp';
+import decoracoesEmSanca0 from '../assets/images/decoracoes-em-sanca0.webp';
+import decoracoesEmSanca1 from '../assets/images/decoracoes-em-sanca1.webp';
+import decoracoesEmSanca2 from '../assets/images/decoracoes-em-sanca2.webp';
+import decoracoesEmSanca3 from '../assets/images/decoracoes-em-sanca3.webp';
+import decoracoesEmSanca4 from '../assets/images/decoracoes-em-sanca4.webp';
+import decoracoesEmSanca5 from '../assets/images/decoracoes-em-sanca5.webp';
+import decoracoesEmSanca6 from '../assets/images/decoracoes-em-sanca6.webp';
+import decoracoesEmSanca7 from '../assets/images/decoracoes-em-sanca7.webp';
 
 
-import decoracoesIluminadas0 from '../assets/images/decoracoes-iluminadas0.jpeg';
-import decoracoes0 from '../assets/images/decoracoes0.jpeg';
+import decoracoesIluminadas0 from '../assets/images/decoracoes-iluminadas0.webp';
+import decoracoes0 from '../assets/images/decoracoes0.webp';
 
 // Divisórias Decoradas
-import divisoriasDrywallDecoradas0 from '../assets/images/divisorias-drywall-decoradas0.jpeg';
-import divisoriasDrywallDecoradas1 from '../assets/images/divisorias-drywall-decoradas1.jpeg';
-import divisoriasDrywallDecoradas2 from '../assets/images/divisorias-drywall-decoradas2.jpeg';
+import divisoriasDrywallDecoradas0 from '../assets/images/divisorias-drywall-decoradas0.webp';
+import divisoriasDrywallDecoradas1 from '../assets/images/divisorias-drywall-decoradas1.webp';
+import divisoriasDrywallDecoradas2 from '../assets/images/divisorias-drywall-decoradas2.webp';
 
 // Divisórias Padrão
-import divisoriasEmDrywall0 from '../assets/images/divisorias-em-drywall0.jpeg';
-import divisoriasEmDrywall1 from '../assets/images/divisorias-em-drywall1.jpeg';
-import divisoriasEmDrywall2 from '../assets/images/divisorias-em-drywall2.jpeg';
-import divisorias0 from '../assets/images/divisorias0.jpg'
-import divisorias1 from '../assets/images/divisorias1.jpg'
-import divisorias3 from '../assets/images/divisorias3.jpg'
+import divisoriasEmDrywall0 from '../assets/images/divisorias-em-drywall0.webp';
+import divisoriasEmDrywall1 from '../assets/images/divisorias-em-drywall1.webp';
+import divisoriasEmDrywall2 from '../assets/images/divisorias-em-drywall2.webp';
+import divisorias0 from '../assets/images/divisorias0.webp'
+import divisorias1 from '../assets/images/divisorias1.webp'
+import divisorias3 from '../assets/images/divisorias3.webp'
 
 // Forros
-import forroDrywallInclinado0 from '../assets/images/forro-drywall-inclinado0.jpeg';
-import forroDrywall0 from '../assets/images/forro-drywall0.jpeg';
-import forroDrywall1 from '../assets/images/forro-drywall1.jpeg';
-import forroDrywall2 from '../assets/images/forro-drywall2.jpeg';
-import forroDrywall3 from '../assets/images/forro-drywall3.jpeg'
+import forroDrywallInclinado0 from '../assets/images/forro-drywall-inclinado0.webp';
+import forroDrywall0 from '../assets/images/forro-drywall0.webp';
+import forroDrywall1 from '../assets/images/forro-drywall1.webp';
+import forroDrywall2 from '../assets/images/forro-drywall2.webp';
+import forroDrywall3 from '../assets/images/forro-drywall3.webp'
 
 //Molduras e placas 3D
-import moldurasplacas3D0 from '../assets/images/molduras-placas3D0.jpg'
-import moldurasplacas3D1 from '../assets/images/molduras-placas3D1.jpg'
+import moldurasplacas3D0 from '../assets/images/molduras-placas3D0.webp'
+import moldurasplacas3D1 from '../assets/images/molduras-placas3D1.webp'
 
 export function Page() {
   const count = useMotionValue(0);
@@ -90,7 +90,7 @@ export function Page() {
         decoracoesEmSanca5,
         decoracoesEmSanca6,
         decoracoesEmSanca7,
-        
+
       ],
       titulo: "Decorações em Sanca",
       descricao: "Acabamento elegante no contorno do teto, ideal para criar luzes indiretas e valorizar a sua sala."

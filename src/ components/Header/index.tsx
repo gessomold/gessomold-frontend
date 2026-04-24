@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/logo.webp";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
