@@ -7,7 +7,7 @@ type ModalServicoProps = {
   imagensModal: string[];
   descricaoModal: string;
   onClose?: () => void;
-};
+}; 
 
 export default function ModalServico({
   tituloModal,
