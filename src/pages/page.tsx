@@ -1,11 +1,17 @@
-import Banner from "../ components/Banner";
-import Footer from "../ components/Footer";
-import Header from "../ components/Header";
-import CardServico from "../ components/Card-Servico";
-import Hero from "../ components/Hero";
-import { animate, useMotionValue } from "motion/react";
+import { AnimatePresence, MotionConfig, animate, useMotionValue } from "motion/react";
 import { useEffect, useState } from "react";
-import ModalServico from "../ components/modal/ModalServico";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import CardServico from "../components/Card-Servico";
+import Hero from "../components/Hero";
+import ModalServico from "../components/modal/ModalServico";
+import Container from "../components/ui/Container";
+import Reveal from "../components/ui/Reveal";
+import SectionHeading from "../components/ui/SectionHeading";
+import ScrollProgress from "../components/ui/ScrollProgress";
+import BackToTop from "../components/ui/BackToTop";
+import WhatsAppFloat from "../components/ui/WhatsAppFloat";
 
 // Decorações
 import decoracoesEmGeral0 from '../assets/images/decoracoes-em-geral0.webp';
@@ -145,36 +151,49 @@ export function Page() {
   const [servicoSelecionado, setServicoSelecionado] = useState<null | typeof servicosData[0]>(null);
 
   return (
-    <>
+    <MotionConfig reducedMotion="user">
       <Header />
-      <Hero />
-      <section id="servicos" className="w-full py-8">
-        <h2 className="flex justify-center font-semibold pb-8 text-2xl">
-          Nossos Serviços
-        </h2>
-        <div className="w-full max-w-[1440px] mx-auto px-4 md:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {servicosData.map((servico) => (
-            <CardServico
-              key={servico.id}
-              imagem={servico.imagens[0]}
-              titulo={servico.titulo}
-              descricao={servico.descricao}
-              onClick={() => setServicoSelecionado(servico)}
+      <ScrollProgress />
+      <main>
+        <Hero />
+        <section id="servicos" className="w-full py-16 sm:py-24">
+          <Container>
+            <SectionHeading
+              eyebrow="O que fazemos"
+              title="Nossos Serviços"
+              description="Soluções completas em gesso e drywall, executadas com material premium e acabamento impecável."
             />
-          ))}
-        </div>
-      </section>
-      <Banner />
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {servicosData.map((servico, index) => (
+                <Reveal key={servico.id} delay={(index % 4) * 0.08} className="h-full">
+                  <CardServico
+                    imagem={servico.imagens[0]}
+                    titulo={servico.titulo}
+                    descricao={servico.descricao}
+                    onClick={() => setServicoSelecionado(servico)}
+                  />
+                </Reveal>
+              ))}
+            </div>
+          </Container>
+        </section>
+        <Banner />
+      </main>
 
       <Footer />
-      {servicoSelecionado && (
-        <ModalServico
-          tituloModal={servicoSelecionado.titulo}
-          imagensModal={servicoSelecionado.imagens}
-          descricaoModal={servicoSelecionado.descricao}
-          onClose={() => setServicoSelecionado(null)}
-        />
-      )}
-    </>
+      <BackToTop />
+      <WhatsAppFloat />
+
+      <AnimatePresence>
+        {servicoSelecionado && (
+          <ModalServico
+            tituloModal={servicoSelecionado.titulo}
+            imagensModal={servicoSelecionado.imagens}
+            descricaoModal={servicoSelecionado.descricao}
+            onClose={() => setServicoSelecionado(null)}
+          />
+        )}
+      </AnimatePresence>
+    </MotionConfig>
   );
 }
