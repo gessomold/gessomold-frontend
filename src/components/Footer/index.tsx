@@ -1,6 +1,6 @@
 import { BadgeCheck, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { motion } from "motion/react";
-import logoWhatsapp from "../../assets/images/whatsapp.svg";
+import logoWhatsapp from "../../assets/images/logo-whatsapp-ctt.svg";
 import Container from "../ui/Container";
 import Reveal from "../ui/Reveal";
 
