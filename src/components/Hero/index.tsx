@@ -70,9 +70,9 @@ export default function Hero() {
               }}
               aria-hidden="true"
             />
-            <Dot className="size-3 text-primary" />
+            <Dot className="size-5 text-primary" />
             <p className="relative z-10 text-sm font-semibold tracking-wide text-white">
-              MOLD GESSO · MOLDGESSO · LÍDER EM COXIM E REGIÃO
+              LÍDER EM COXIM E REGIÃO
             </p>
           </motion.div>
 
@@ -80,9 +80,7 @@ export default function Hero() {
             variants={item}
             className="text-4xl font-bold leading-[1.1] tracking-tight text-white md:text-6xl lg:text-7xl"
           >
-            <span className="mb-3 block text-2xl font-bold tracking-wide text-primary-light sm:text-3xl">
-              MOLD GESSO – MOLDGESSO
-            </span>
+
             MAIS DE{" "}
             <motion.span className="inline-block min-w-[2ch] rounded-xl bg-primary px-2 py-0.5 text-center tabular-nums shadow-lift">
               {rounded}
